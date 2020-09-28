@@ -1,10 +1,11 @@
 *{
     font-size: 1em;
     font-family: Calibri;
+    text-decoration: none;
 }
 body{
     display: grid;
-    grid-template-rows: 90px 50px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 50px 1fr 1fr 1fr 1fr;
     grid-template-columns: repeat(3,1fr);
 }
 header{
@@ -15,48 +16,51 @@ header{
 nav{
     grid-row: 2 / 3;
     grid-column: 1 / span 3;
-    background: #0f0;
+    background: #1e7;
+    position: sticky;
+    top:0px;
 }
 main{
     grid-row: 3 / 6;
     grid-column: 1 / span 2;
-    background: #00f;
 }
 aside{
     grid-row: 3 / 6;
     grid-column: 3 / span 1;
-    background: #ff0;
 }
 footer{
     grid-row: 6 / 7;
     grid-column: 1 / sapn 3;
-    background: #f0f;
-
+    background: #1c7;
 
 }
             /*-----------footer-------------*/
 .cont__footer{
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    background: #f0f;
+    padding: 50px;
 
 }
 .cont__footer-grupo{
-    width: 30vw;
-    background: #f5f;
+
+    width: 40vw;
 
 }
+.footer__h3{
+    margin: 10px;
+    font-size: 1.1em
+}
+.footer__li{
+    list-style:none;
+    font-size: 1em;
+}
 .cont__footer-menuInferior{
-    width: 30vw;
-    background: #f9f;
-
+    width: 40vw;
 
 }
 .cont__footer-redes{
-    width: 30vw;
+    width: 20vw;
     text-align: center;
-    background: #fbf;
 
 }
         /*----------------header-------------*/
@@ -87,7 +91,7 @@ footer{
 }
 .cont__header-lupa input{
     text-align: center;
-    width: 500px;
+    width: 400px;
     height: 40px;
 }
 
@@ -103,8 +107,12 @@ footer{
     margin-right: 30px;
 
 }
-
-
+:visited{
+    color: #000;
+}
+:link{
+    color: #000;
+}
 
 
 
