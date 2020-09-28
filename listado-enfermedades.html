@@ -1,81 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
+   <link rel="shortcut icon" href="img/icono.ico">
     <meta charset="UTF-8">
     <title>PREVENT=HEALTH</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/hojadeestilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <heade>
-        <div>
-            <img src="./img/logo.png" alt="Logo">    <!-- LOGO-->
+    <header>
+        <div class="cont__header">
+            <div class="cont__header-logo">
+                <a href="index.html"><img id="logo" src="img/logo.png" alt="Logo"> </a>
+            </div>
+            <div class="cont__header-barra">
+                <div class="cont__header-lupa">
+                    <label class="fas fa-search">
+                        <input list="Enfermedades" name="Enfermedades" />
+                    </label>
+                </div>
+                <div class="cont__header-busqueda">
+                    <datalist id="Enfermedades">
+                        <option value="gripe estacional">
+                        <option value="Coronavirus -COVID19">
+                    </datalist>
+                </div>
+            </div>
         </div>
-        <div>
-            <label><img id="lupa" src="./img/buscador.png" alt="">
-                <input list="Enfermedades" name="Enfermedades" />
-            </label>
-            <datalist id="Enfermedades">
-            <option value="gripe estacional">
-            <option value="Coronavirus -COVID19">
-            </datalist>
-        </div>
-    </heade>
+    </header>
     <nav>
-        <ul>
-            <li>HOME</li>
-            <li>ENFERMEDADES</li>
-            <li>VACUNACÍON</li>
-            <li>HOSPITALES</li>
-            <li>CONTACTO</li>
-        </ul>
+        <div class="cont__nav">
+            <ul class="cont__nav-ul">
+                <li class="fas fa-home"><a href="index.html">HOME</a></li>
+                <li class="fas fa-viruses"><a href="listado-enfermedades.html">ENFERMEDADES</a></li>
+                <li class="fas fa-stethoscope"><a href="detalle-enfermedades.html">VACUNACÍON</a></li>
+                <li class="fas fa-clinic-medical"><a href="mapa.html">HOSPITALES</a></li>
+                <li class="fas fa-users"><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
     </nav>
     <aside>
-
-
+        aside
     </aside>
-    <section>
-
-    </section>
+    <main>
+        main
+    </main>
     <footer>
-        <div>
-           <h3>Datos del grupo:</h3>
-            <ul>
-                <li>Tomas Viteritti - 42148096</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Menu inferior:</h3>
-            <ul>
-                <li>Enfermedades</li>
-                <li>Vacunas</li>
-                <li>Hospitales</li>
-                <li>Contactos</li>
-            </ul>
-        </div>
-        <div>
-            <h3>Redes sociales:</h3>
-            <div>
-           <a href="https://www.facebook.com/"target="_blank"><img
-           src="./img/faceboock.png" alt="faceboock"></a>
+           <div class="cont__footer">
+            <div class="cont__footer-grupo">
+                <h3 class="footer__h3">Datos del grupo:</h3>
+                <ul>
+                    <li class="footer__li">Tomas Viteritti - 42148096</li>
+                    <li class="footer__li">name - dni</li>
+                    <li class="footer__li">name - dni</li>
+                </ul>
+            </div>
+            <div class="cont__footer-menuInferior">
+                <h3 class="footer__h3">Menu inferior:</h3>
+                <ul>
+                    <li class="footer__li"><a href="listado-enfermedades.html">Enfermedades</a></li>
+                    <li class="footer__li"><a href="detalle-enfermedades.html">Vacunas</a></li>
+                    <li class="footer__li"><a href="mapa.html">Hospitales</a></li>
+                    <li class="footer__li"><a href="contacto.html">Contactos</a></li>
+                </ul>
+            </div>
+            <div class="cont__footer-redes">
+                <h3 class="footer__h3">Redes sociales:</h3>
+                <div class="cont__footer__redes-img">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="faceboock"></a>
 
-            <a href="https://www.instagram.com/"target="_blank"><img
-           src="./img/instagram.png" alt="instagram"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" alt="instagram"></a>
 
-           <a href="https://twitter.com/"target="_blank"><img
-           src="./img/twitter.png" alt="twitter"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="./img/twitter.png" alt="twitter"></a>
+                </div>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
