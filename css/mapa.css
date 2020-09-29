@@ -1,0 +1,14 @@
+            /*--------main----------*/
+main{
+    grid-column: 1 /sapn 3;
+}
+.cont__main{
+    padding: 10px;
+    text-align: center;
+
+}
+.cont__main-mapa iframe{
+    width: 110em;
+    height: 50em;
+}
+

@@ -29,7 +29,11 @@ nav{
 }
 main{
     grid-row: 3 / 6;
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 2;
+}
+aside{
+    grid-row: 3 / 6;
+    grid-column: 3 / span 1;
 }
 footer{
     grid-row: 6 / 7;
@@ -111,17 +115,7 @@ footer{
 
 }
 
-            /*--------main----------*/
-.cont__main{
-    padding: 10px;
-    text-align: center;
 
-}
-
-.cont__main-mapa iframe{
-    width: 100em;
-    height: 50em;
-}
 
 
 
