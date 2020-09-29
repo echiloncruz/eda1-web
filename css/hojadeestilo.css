@@ -3,6 +3,13 @@
     font-family: Calibri;
     text-decoration: none;
 }
+:visited{
+    color: #000;
+}
+:link{
+    color: #000;
+}
+
 body{
     display: grid;
     grid-template-rows: 100px 50px 1fr 1fr 1fr 1fr;
@@ -22,11 +29,7 @@ nav{
 }
 main{
     grid-row: 3 / 6;
-    grid-column: 1 / span 2;
-}
-aside{
-    grid-row: 3 / 6;
-    grid-column: 3 / span 1;
+    grid-column: 1 / span 3;
 }
 footer{
     grid-row: 6 / 7;
@@ -107,16 +110,18 @@ footer{
     margin-right: 30px;
 
 }
-:visited{
-    color: #000;
+
+            /*--------main----------*/
+.cont__main{
+    padding: 10px;
+    text-align: center;
+
 }
-:link{
-    color: #000;
+
+.cont__main-mapa iframe{
+    width: 100em;
+
 }
-
-
-
-
 
 
 
