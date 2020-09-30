@@ -12,7 +12,7 @@
 
 body{
     display: grid;
-    grid-template-rows: 100px 50px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 50px 1fr 1fr 1fr 200px;
     grid-template-columns: repeat(3,1fr);
 }
 header{
@@ -45,8 +45,9 @@ footer{
 .cont__footer{
     display: flex;
     justify-content: space-between;
-    padding: 50px;
-
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 .cont__footer-grupo{
 

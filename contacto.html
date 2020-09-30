@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/hojadeestilo.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contacto.css">
     <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
 </head>
 
@@ -44,32 +45,47 @@
         </div>
     </nav>
     <aside>
-        <div class="cont__aside">
+        <section class="cont__aside">
             <div class="cont__aside-h2">
                 <h2>UBICACION</h2>
             </div>
             <div class="cont__aside-mapa">
-                mapa
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18562.289185487178!2d-58.56753753387715!3d-34.670354162442976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses!2sar!4v1601403958484!5m2!1ses!2sar" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
-        </div>
+        </section>
     </aside>
     <main>
         <div class="cont__main">
-            <div class="cont__main-form">
-                <form action="text">
-                    <h2>CONTACTO</h2>
-                    form
+            <section class="cont__main-form">
+                <form action="#" method="get">
+                    <h1>CONTACTO</h1>
+                    <div>
+                        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre" required>
+                    </div>
+                    <div>
+                        <input type="text" id="Apellido" name="Apellido" placeholder="Apellido" required>
+                    </div>
+                    <div>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div>
+                       <input type="tel" id="telefono" name="telefono" placeholder="telefono (opciona)">
+                    </div>
+                    <div>
+                        <textarea name="consulta" id="consulta" placeholder="ingrese su consulta" required></textarea>
+                    </div>
+                    <input type="submit" value="Enviar">
                 </form>
-            </div>
-            <div class="cont__main-datos">
-                <h2>DATOS DE CONTACTO</h2>
+            </section>
+            <section class="cont__main-datos">
+                <h1>DATOS DE CONTACTO</h1>
                 <div class="cont__main__datos-li">
                     <ul>
-                        <li><h5>Direccion:</h5> direccion123</li>
-                        <li><h5>Telefono:</h5> 1234-5678</li>
-                        <li><h5>Celular:</h5> 15-1234-5678</li>
-                        <li><h5>Email:</h5> ejemplo@gmail.com</li>
-                        <li><h5>Web:</h5> nose</li>
+                        <li><h2>Direccion:</h2> direccion123</li>
+                        <li><h2>Telefono:</h2> 1234-5678</li>
+                        <li><h2>Celular:</h2> 15-1234-5678</li>
+                        <li><h2>Email:</h2> ejemplo@gmail.com</li>
+                        <li><h2>Web:</h2> nose</li>
                     </ul>
                 </div>
                 <div class="cont__main__datos-redes">
@@ -79,11 +95,11 @@
 
                     <a href="https://twitter.com/" target="_blank"><img src="./img/twitter.png" alt="twitter"></a>
                 </div>
-            </div>
+            </section>
         </div>
     </main>
     <footer>
-           <div class="cont__footer">
+        <section class="cont__footer">
             <div class="cont__footer-grupo">
                 <h3 class="footer__h3">Datos del grupo:</h3>
                 <ul>
@@ -111,7 +127,7 @@
                     <a href="https://twitter.com/" target="_blank"><img src="./img/twitter.png" alt="twitter"></a>
                 </div>
             </div>
-        </div>
+        </section>
     </footer>
 </body>
 

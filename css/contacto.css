@@ -1,0 +1,60 @@
+main{
+    grid-row: 3/5;
+    grid-column: 1/ span 3;
+}
+aside{
+    grid-row: 5/6;
+    grid-column: 1/ span 3;
+}
+                     /*------aside-------*/
+.cont__aside{
+    text-align: center;
+    padding: 10px;
+}
+.cont__aside-mapa iframe{
+    width: 100em;
+    height: 20em;
+}
+.cont__aside-h2{
+    margin-bottom: 30px;
+}
+                        /*------main-------*/
+
+.cont__main{
+    display: flex;
+    height: 100%;
+}
+.cont__main-form{
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 40px;
+
+}
+.cont__main-datos{
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 40px;
+
+}
+.cont__main-form input{
+    margin: 15px;
+    height: 3em;
+    width: 30em;
+}
+textarea{
+    height: 10em;
+    width: 30em;
+}
+.cont__main__datos-li li{
+    margin: 15px;
+    display: flex
+
+}
+.cont__main__datos-li{
+    margin-top: 80px;
+}
+
+
+
+
