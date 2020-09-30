@@ -41,10 +41,15 @@ aside{
     margin: 15px;
     height: 3em;
     width: 30em;
+    border: none;
+    border-bottom: 4px solid #1c7;
 }
 textarea{
     height: 10em;
     width: 30em;
+    border: none;
+    resize: none;
+    border-bottom: 4px solid #1c7;
 }
 .cont__main__datos-li li{
     margin: 15px;
@@ -54,7 +59,16 @@ textarea{
 .cont__main__datos-li{
     margin-top: 80px;
 }
-
-
-
-
+#boton:hover{
+    background: #04ebad;
+}
+#boton{
+    border: none;
+    background: #1c7;
+}
+.cont__main-form input,textarea:focus{
+    outline: none;
+}
+#boton:focus{
+    outline:solid;
+}
