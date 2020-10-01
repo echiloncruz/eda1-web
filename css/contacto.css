@@ -1,4 +1,12 @@
+aside{
+    grid-row: 5/6;
+    grid-column: 1/4;
 
+}
+main{
+    grid-column: 1/4;
+    grid-row: 3/5
+}
                      /*------aside-------*/
 .cont__aside{
     padding: 10px;
@@ -77,14 +85,16 @@ textarea{
     outline:solid;
 }
 
-aside{
-    grid-row: 5/6;
-    grid-column: 1/4;
+            /*--------responsive--------*/
 
-}
-main{
-    grid-column: 1/4;
-    grid-row: 3/5
+@media only screen and (max-width: 900px){
+    .cont__main-form input{
+        width: 15em;
+    }
+    .cont__main-form textarea{
+        width: 15em;
+    }
+
 }
 
 
