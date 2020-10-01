@@ -87,18 +87,17 @@ footer{
 
 }
 .cont__header-barra{
-    width: 100vw;
+    width: 70vw;
     padding: 10px;
-
 }
 .cont__header-lupa{
-    text-align: center;
+    text-align: end;
     margin-top: 15px;
-    width: 50vw;
+
 
 }
 .cont__header-lupa input{
-    text-align: center;
+
     width: 400px;
     height: 40px;
 }
@@ -116,10 +115,37 @@ footer{
 
 }
 
+        /*----------responsive------------*/
+
+@media only screen and (max-width: 900px) and (min-width:400px){
+
+    .cont__header-lupa input{
+    width: 200px;
+    height: 20px;
+    }
+    .cont__header-logo img{
+    margin-left: 0px;
+    width: 80px;
+    height: 80px;
+
+    }
 
 
 
+}
+@media only screen and (max-width: 400px){
 
+ .cont__header-lupa input{
 
+    width: 150px;
+    height: 20px;
+    }
+    .cont__header-logo img{
+    margin-left: 0px;
+    width: 80px;
+    height: 80px;
+
+    }
+}
 
 
