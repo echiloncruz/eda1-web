@@ -9,7 +9,9 @@
 :link{
     color: #000;
 }
-
+.responsiv__cont__nav-ul{
+    display: none;
+}
 body{
     display: grid;
     grid-template-rows: 100px 50px 1fr 1fr 1fr 200px;
@@ -43,34 +45,23 @@ footer{
 }
             /*-----------footer-------------*/
 .cont__footer{
+    height: 100%;
     display: flex;
-    justify-content: space-between;
-    padding-top: 50px;
-    padding-right: 50px;
-    padding-left: 50px;
-}
-.cont__footer-grupo{
-
-    width: 40vw;
+    text-align: start;
+    justify-content: space-around;
+    align-items: center
 
 }
+
 .footer__h3{
-    margin: 10px;
     font-size: 1.1em
 }
 .footer__li{
     list-style:none;
     font-size: 1em;
-}
-.cont__footer-menuInferior{
-    width: 40vw;
 
 }
-.cont__footer-redes{
-    width: 20vw;
-    text-align: center;
 
-}
         /*----------------header-------------*/
 
 .cont__header{
@@ -114,11 +105,32 @@ footer{
     margin-right: 30px;
 
 }
+.cont__nav a:hover{
+    color: #444;
+
+}
 
         /*----------responsive------------*/
 
 @media only screen and (max-width: 900px) and (min-width:400px){
+    .cont__nav-ul{
+        display: none;
+    }
+    .responsiv__cont__nav-ul{
+        display: block;
 
+    }
+    .responsiv__nav-button{
+        float: right;
+    }
+
+
+
+
+
+
+
+                /*--------header------*/
     .cont__header-lupa input{
     width: 200px;
     height: 20px;
@@ -146,6 +158,11 @@ footer{
     height: 80px;
 
     }
+    .cont__footer__redes-img{
+        width: 50%;
+        margin-left: 10px;
+    }
+
 }
 
 
