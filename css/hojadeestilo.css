@@ -2,6 +2,7 @@
     font-size: 1em;
     font-family: Calibri;
     text-decoration: none;
+    list-style:none;
 }
 :visited{
     color: #000;
@@ -94,41 +95,68 @@ footer{
 }
 
             /*------------nav------------*/
-
-.cont__nav {
-    padding: 15px;
-    text-align: center;
+#boton-menu{
+    display: none;
+}
+nav label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+nav label:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+.cont__nav-ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
 
 }
 .cont__nav-ul li{
     text-align: center;
-    margin-right: 30px;
-
+    flex-grow: 1;
+    border-right: 1px solid #fff;
 }
-.cont__nav a:hover{
-    color: #444;
-
+.cont__nav-ul li:hover{
+    background: rgba(0,0,0,0.3);
 }
+.cont__nav a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+}
+
 
         /*----------responsive------------*/
+@media only screen and (max-width: 900px){
+
+                /*----------nav----------*/
+    nav label{
+        display: block;
+    }
+    .cont__nav{
+        position: absolute;
+        background: #1e7;
+        width: 50%;
+        margin-left: -50%;
+    }
+    .cont__nav-ul{
+        flex-direction: column;
+    }
+    .cont__nav-ul li{
+         border-top: 1px solid #000;
+        text-align: start;
+    }
+    #boton-menu:checked ~ .cont__nav{
+        margin-left: 0;
+    }
+
+}
 
 @media only screen and (max-width: 900px) and (min-width:400px){
-    .cont__nav-ul{
-        display: none;
-    }
-    .responsiv__cont__nav-ul{
-        display: block;
-
-    }
-    .responsiv__nav-button{
-        float: right;
-    }
-
-
-
-
-
-
 
                 /*--------header------*/
     .cont__header-lupa input{
@@ -142,11 +170,12 @@ footer{
 
     }
 
-
-
 }
+
 @media only screen and (max-width: 400px){
 
+
+             /*--------header------*/
  .cont__header-lupa input{
 
     width: 150px;
