@@ -24,11 +24,70 @@ main{
 
 /*------------------aside----------------*/
 
+.cont__aside{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px;
+}
+.cont__aside-hospital img{
+    width:300px;
+}
+.cont__aside-mapa{
 
+}
+aside h2{
+   text-align: center;
+    margin-top: 50px;
+}
 
+/*-----------main-----------*/
+.cont__main h1{
+    text-align: center;
+}
+.cont__main-formulario{
+  display: flex;
+    justify-content: space-around;
+    margin: 20px 50px;
+}
+.cont__main-formulario img{
+    width: 150px;
 
+}
+.cont__main-formulario-form{
+    width: 100%;
+    margin-left: 50px;
+}
+.form__viajes-exterior{
+   margin: 15px 0px;
+}
+.input-question{
+    margin-left: 250px
+}
+.input-question label{
+    position: absolute;
+    left: 1000px;
 
+}
+.barra-input{
+    width: 300px;
+    height: 30px;
+    margin: 15px 0px;
+    margin-right: 10px;
+}
+#nombreapellido{
+    width: 618px;
+}
+#barra-paises{
+    width: 300px;
+}
+.cont__main-formulario-sintomas{
+    width: 100%;
+    margin-right: 50px;
+}
 
+.cont__main-precaucion img{
+    width: 150px;
+}
 
 
 
