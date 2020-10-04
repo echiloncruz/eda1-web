@@ -66,10 +66,10 @@
                     <li>Direccion</li>
                     <li>Ciudad</li>
                 </ul>
-                <img src="" alt="">
+                <img src="img/hospital.png" alt="">
             </div>
             <div>
-                mapa
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13132.4601922731!2d-58.3826800656429!3d-34.62653283725552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x95da25eb7e80269a!2sHospital%20Argerich!5e0!3m2!1ses-419!2sar!4v1601819450895!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
     </aside>
@@ -85,7 +85,56 @@
                     <img src="img/25-fiebre-dificultad-respirar.png" alt="">
                 </section>
                 <section class="cont__main-formulario-form">
+                    <form action="#" method="get">
+                        <input type="text" placeholder="Nombre y Apellido" required>
 
+                        <input type="number" placeholder="DNI"
+                        required>
+
+                        <input type="tel" placeholder="Telefono"
+                        required>
+
+                        <input type="text" placeholder="Ciudad"
+                        required>
+
+                        <label for="sexo">SEXO</label>
+                        varon <input type="radio" name="sexo">
+                        mujer <input type="radio" name="sexo">
+
+                        <label for="question">¿Has viajado al exterior de la Republica Argentina?</label>
+                        si <input type="radio" name="question">
+                        no <input type="radio" name="question">
+
+                        <label for ="paises">paises visitados</label>
+                        <select name="paises" id="paises">
+                            <option value="br">Brasil</option>
+                            <option value="ur">uruguay</option>
+                        </select>
+
+                        <label for="question1">¿Tuviste fiebre mayor a 38 grados?</label>
+                        si <input type="radio" name="question1">
+                        no <input type="radio" name="question1">
+
+                        <label for="question2">¿tuviste dolor de cabeza?</label>
+                        si <input type="radio" name="question2">
+                        no <input type="radio" name="question2">
+
+                        <label for="question3">¿tuviste una tos persistente?</label>
+                        si <input type="radio" name="question3">
+                        no <input type="radio" name="question3">
+
+                        <label for="question4">¿tuviste dolor de gargante?</label>
+                        si <input type="radio" name="question4">
+                        no <input type="radio" name="question4">
+
+                        <label for="question5">¿tuviste dificultad para respirar?</label>
+                        si <input type="radio" name="question5">
+                        no <input type="radio" name="question5">
+
+                        <input type="text" placeholder="Direccion" required>
+
+                        <input type="text" placeholder="Ciudad" required>
+                    </form>
                 </section>
             </div>
             <section class="cont__main-precaucion">
