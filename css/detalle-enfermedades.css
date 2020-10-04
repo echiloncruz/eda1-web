@@ -16,6 +16,10 @@ main{
 .descripcion__article{
     margin: 20px 50px;
     display: flex;
+    overflow: auto;
+}
+.descripcion__article p{
+   min-width: 250px;
 }
 .descripcion__article img{
     width: 500px;
@@ -26,31 +30,41 @@ main{
 
 .cont__aside{
     display: flex;
-    justify-content: space-between;
-    margin: 20px 30px;
+    justify-content: space-around;
+    margin: 20px 50px;
+}
+
+.cont__aside-mapa iframe{
+    max-width: 100%;
+    height: auto;
+    width: 700px;
+    height: 250px
 }
 .cont__aside-hospital img{
-    width:300px;
-}
-.cont__aside-mapa{
-
+    width: 300px;
+    min-width: 250px;
+    min-height: 100px;
 }
 aside h2{
-   text-align: center;
+    text-align: center;
     margin-top: 50px;
 }
+.cont__aside-hospital{
+    margin-right: 50px;
+}
+
 
 /*-----------main-----------*/
 .cont__main h1{
     text-align: center;
 }
 .cont__main-formulario{
-  display: flex;
+    display: flex;
     justify-content: space-around;
     margin: 20px 50px;
 }
 .cont__main-formulario img{
-    width: 150px;
+    width: 200px;
 
 }
 .cont__main-formulario-form{
@@ -59,14 +73,6 @@ aside h2{
 }
 .form__viajes-exterior{
    margin: 15px 0px;
-}
-.input-question{
-    margin-left: 250px
-}
-.input-question label{
-    position: absolute;
-    left: 1000px;
-
 }
 .barra-input{
     width: 300px;
@@ -81,20 +87,145 @@ aside h2{
     width: 300px;
 }
 .cont__main-formulario-sintomas{
+    min-width: 200px;
     width: 100%;
     margin-right: 50px;
 }
-
-.cont__main-precaucion img{
-    width: 150px;
+.cont__main-sintomas{
+    margin-top: 50px;
+    text-align: center
 }
 
+.cont__main-precaucion img{
+    width: 200px;
+}
+.cont__main-precaucion{
+    text-align: center;
+    margin: 20px 50px;
+}
 
+/*--------------responcive--------------*/
 
+@media only screen and (max-width: 1300px){
 
+    /*-----------main-----------*/
+    .barra-input{
+        width: 200px;
+    }
+    #nombreapellido{
+        width: 518px;
+    }
+    #barra-paises{
+        width: 200px;
+    }
+    .cont__main-formulario img{
+    width: 150px;
+    }
+    .cont__main-formulario-form{
+        margin-left: 10px;
+    }
+    .cont__main-formulario-sintomas{
+        margin-right: 10px;
+    }
+}
 
 
 @media only screen and (max-width: 1000px){
+    .descripcion__article img{
+        width: 300px;
+    }
+     /*-----------main-----------*/
+    .cont__main-formulario{
+        flex-direction: column;
 
+    }
+    .cont__main-formulario-form{
+        margin: 50px ;
+    }
+    .cont__main-formulario img{
+        width: 200px;
+    }
+    .cont__main-precaucion img{
+    width: 150px;
+    }
+    /*---------------aside---------------*/
+    .cont__aside{
+        flex-direction: column-reverse;
+    }
+    .cont__aside-mapa{
+        margin-bottom: 30px;
+        text-align: center;
+    }
 
 }
+
+@media only screen and (max-width: 700px){
+
+         /*-----------main-----------*/
+    .cont__main-formulario-form{
+        margin: 20px 0px;
+    }
+    .cont__main-precaucion{
+        margin: 20px 20px;
+    }
+    #nombreapellido{
+        width: 418px;
+    }
+
+         /*-----------descripcion-----------*/
+
+
+    .descripcion__article img{
+        width: 200px;
+    }
+    .descripcion__article{
+        margin: 20px 10px;
+    }
+}
+
+@media only screen and (max-width: 555px){
+
+    .barra-input{
+        width: 150px;
+    }
+    #nombreapellido{
+        width: 320px;
+    }
+    #barra-paises{
+        width: 150px;
+    }
+    .cont__main-formulario img{
+    width: 100px;
+    }
+    .cont__main-formulario{
+        margin: 20px 10px;
+    }
+    .cont__main h1{
+        font-size: 20px;
+    }
+
+
+
+    .descripcion__article img{
+        width: 150px;
+        margin-right: 5px;
+    }
+
+
+    .cont__aside{
+        margin: 20px 10px;
+    }
+
+}
+@media only screen and (max-width: 400px){
+    .descripcion__article img{
+
+        width: 110px;
+        height: 90px
+    }
+    #nombreapellido{
+        width: 150px;
+    }
+}
+
+
