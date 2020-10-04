@@ -23,6 +23,19 @@ main{
     display: flex;
     justify-content:space-around;
 }
+.cont__main__img-a {
+    background: #1c7;
+    text-align: center;
+    padding: 10px 0px;
+    margin-bottom: 100px;
+    border-radius: 2em;
+
+}
+.cont__main__img-cont{
+    display: flex;
+    flex-direction:column-reverse;
+
+}
 .cont__main-titulo{
     font-size: 50px;
     text-align: center;
@@ -53,31 +66,32 @@ aside img{
 }
 @media only screen and (max-width: 600px){
 
-    .cont__main-titulo{
-    font-size: 20px;
-    }
+
     .cont__main-img img{
     width: 100px;
     height: 100px;
+    text-align: center;
+    }
+    .cont__main__img-cont{
+    text-align: center;
+    font-size: 10px;
+    }
+    .cont__main__img-a{
+    padding: 5px 0px;
+    margin-bottom: 50px;
     }
     aside img{
     min-width: 250px;
     min-height: 130px;
-}
-}
-@media only screen and (max-width: 600px){
+    }
 
     .cont__main-titulo{
     font-size: 15px;
     }
-    .cont__main-img img{
-    width: 100px;
-    height: 100px;
-    }
     .carrusel img{
     height: 300px;
     width: 100%;
-}
+    }
 
 }
 
